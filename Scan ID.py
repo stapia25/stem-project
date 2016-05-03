@@ -1,7 +1,8 @@
-__author__ = 'student'
+i__author__ = 'student'
 import time
 import pickle
-
+with open("student_info.p","rb") as f:
+         student_info = pickle.load(f)
 while True:
     s_id = input('Choose what you would like to do from the following options: \n1.)Scan student id?,\n2.)View Report, \n3.)Quit? \nType the option number here: ')
     if s_id in ['1']:
