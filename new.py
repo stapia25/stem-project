@@ -5,6 +5,12 @@ while True:
     if s_id in ['1']:
         pass# the scan id group write your code here:
     elif s_id in ['2']:
-        pass# the view report group write your code here:
+        report_menu = input('Choose to see either the student reports or class reports.\nC)Class Report\nS)Student Menu.')
+        if report_menu in ['c','C']:
+            print('You are now in the class reports section.')
+            class_report = input('Enter period number:')    
+        elif report_menu in ['s','S']:
+            print('You are now in the student report menu.')
+        # the view report group write your code here:
     else:
         pass# the quit group write your code here:
