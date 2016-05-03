@@ -15,5 +15,4 @@ students = {'4401001': 'Christine Adewale',
 '4401094' : 'Sebastian Tapia'
 }
 with open('student_info.p', 'wb') as f:
-          pickle.dump(students, f, pickle.HIGHEST_PROTOCOL)
-
+          pickle.dump(students, f, pickle.DEFAULT_PROTOCOL)
