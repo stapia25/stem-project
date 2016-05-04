@@ -8,9 +8,11 @@ while True:
         report_menu = input('Choose to see either the student reports or class reports.\nC)Class Report\nS)Student Menu.')
         if report_menu in ['c','C']:
             print('You are now in the class reports section.')
-            class_report = input('Enter period number:')    
+            class_report = input('Enter period number:')
+            if class_report in ['p1,p2,p3,p4,p5,p6,p7,p8,p9,p10']:
+
+                break
         elif report_menu in ['s','S']:
             print('You are now in the student report menu.')
         # the view report group write your code here:
     else:
-        pass# the quit group write your code here:
