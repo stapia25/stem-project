@@ -1,7 +1,8 @@
 __author__ = 'student'
 #eliel and abe and wayne
 import pickle
-
+with open('student_info.p','rb') as f:
+    student_info = pickle.load(f)
 while True:
     s_id = input('Choose what you would like to do from the following options: \n1.)Scan student id?,\n2.)View Report, \n3.)Quit? \nType the option number here: ')
     if s_id in ['1']:
@@ -11,13 +12,14 @@ while True:
         if report_menu in ['C','c']:
             print('Class Report')
         elif report_menu in ['S','s']:
-            sr = input("Enter ID#:")
-            student_report = {"ID#":"name"}
-            pickle.dump
+            pickle.dump( student_info, open("student_info.p", "wb"))
+            student_ID = {"ID#":"name"}
+            student_info = input('Enter the ID number of the student or go bck to menu?')
+            if student_info in ['']:
+                student_ID = pickle.load(open)
 
 
+            pickle.close()
             main_student = input('Back to Main Menu?\n[Y or N]')
             if main_student in ['Y','N']:
 
-    else:
-        pass# the quit group write your code here:
