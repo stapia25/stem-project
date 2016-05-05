@@ -5,7 +5,16 @@ while True:
     if s_id in ['1']:
         pass# the scan id group write your code here:
     elif s_id in ['2']:
-        pass# the view report group write your code here:
+        report_menu = input('Choose to see either the student reports or class reports.\nC)Class Report\nS)Student Menu.')
+        if report_menu in ['c','C']:
+            print('You are now in the class reports section.')
+            class_report = input('Enter period number:')
+            if class_report in ['p1,p2,p3,p4,p5,p6,p7,p8,p9,p10']:
+
+                break
+        elif report_menu in ['s','S']:
+            print('You are now in the student report menu.')
+        pass
     elif s_id in ['3']:
         exit = input('Mark rest absent?\n (y/[n]')
         if exit in ['N','n']:
@@ -15,3 +24,4 @@ while True:
             if exit in ['y','Y','N', 'n']:
                 exit2 = input('Still Quit?(y/[n]')
                 break
+
