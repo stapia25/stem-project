@@ -6,5 +6,12 @@ while True:
         pass# the scan id group write your code here:
     elif s_id in ['2']:
         pass# the view report group write your code here:
-    else:
-        pass# the quit group write your code here:
+    elif s_id in ['3']:
+        exit = input('Mark rest absent?\n (y/[n]')
+        if exit in ['N','n']:
+            exit2 = input('Still Quit?(y/[n]')
+        elif exit in ['y','Y']:
+            exit1 = input('Mark all missing absent? (y/[n]')
+            if exit in ['y','Y','N', 'n']:
+                exit2 = input('Still Quit?(y/[n]')
+                break
