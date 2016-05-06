@@ -19,12 +19,7 @@ while True:
 
         except KeyError:
                 print('This is an invalid ID. Please try again.')
-
-    elif s_id in ['2']:
-            pass# the view report group write your code here:
-    elif s_id in ['3']:
-            pass# the quit group write your code here:
-    else:
+        else:
             print('ERROR. PLEASE TRY AGAIN')
     elif s_id in ['2']:
         report_menu = input('Choose to see either the student reports or class reports.\nC)Class Report\nS)Student Menu.')
